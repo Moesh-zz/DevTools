@@ -1,2 +1,27 @@
 
 logs/
+
+crash-reports/
+
+realms_persistence\.json
+
+saves/Completely/advancements/
+
+saves/Completely/data/
+
+saves/Completely/DIM-1/data/
+
+saves/Completely/DIM1/data/
+
+saves/Completely/playerdata/
+
+saves/Completely/stats/
+
+saves/Completely/session\.lock
+
+saves/Completely/level\.dat_old
+options\.txt
+
+saves/Completely/icon\.png
+
+usercache\.json
