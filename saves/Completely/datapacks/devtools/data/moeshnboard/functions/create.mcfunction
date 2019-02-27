@@ -25,4 +25,7 @@ summon minecraft:cow 32 3 32 {NoAI:1b,CustomName:"{\"translate\":\"moeshnboard.e
 function moeshnboard:choose_and_place_structure
 scoreboard players add current_column createBoard 1
 execute as @e[type=cow,name=moeshnboard.entity] at @s run teleport @s ~16 ~ ~
+#function moeshnboard:choose_and_place_structure
+
+# Start loop
 function moeshnboard:move_row
