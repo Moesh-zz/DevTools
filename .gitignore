@@ -5,23 +5,25 @@ crash-reports/
 
 realms_persistence\.json
 
-saves/Completely/advancements/
+saves/Development/advancements/
 
-saves/Completely/data/
+saves/Development/data/
 
-saves/Completely/DIM-1/data/
+saves/Development/DIM-1/data/
 
-saves/Completely/DIM1/data/
+saves/Development/DIM1/data/
 
-saves/Completely/playerdata/
+saves/Development/playerdata/
 
-saves/Completely/stats/
+saves/Development/stats/
 
-saves/Completely/session\.lock
+saves/Development/session\.lock
 
-saves/Completely/level\.dat_old
+saves/Development/level\.dat_old
 options\.txt
 
-saves/Completely/icon\.png
+saves/Development/icon\.png
 
 usercache\.json
+
+saves/Development/advancements/
