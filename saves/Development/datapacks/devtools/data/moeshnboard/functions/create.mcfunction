@@ -1,8 +1,7 @@
 # Announce process
-tellraw @a {"translate":"moeshnboard.create","color":"green"}
+tellraw @a {"translate":"moeshnboard.create","color":"light_purple"}
 
 # Set-up objectives
-scoreboard objectives remove createBoard
 scoreboard objectives add createBoard dummy
 
 scoreboard players set max_rows createBoard 13
@@ -21,9 +20,17 @@ fill 32 0 240 239 2 240 minecraft:black_concrete
 
 # Teleport player to area, create actor, place first structure
 teleport @s 31 10 31 -45 40
-kill @e[type=armor_stand,name=moeshnboard.entity]
-kill @e[type=item]
-summon minecraft:armor_stand 32 3 32 {NoAI:1b,CustomName:"{\"translate\":\"moeshnboard.entity\"}",CustomNameVisible:1b,Duration:2147483647}
+kill @e[type=armor_stand]
+summon minecraft:armor_stand 32 3 32 {NoAI:1b,NoGravity:1b,CustomName:"{\"translate\":\"moeshnboard.entity.cursor\"}",Tags:["Cursor"],CustomNameVisible:1b}
+summon minecraft:armor_stand 32 3 32 {NoAI:1b,NoGravity:1b,CustomName:"{\"translate\":\"moeshnboard.entity.rowMarker\"}",Tags:["RowMarker"],CustomNameVisible:1b}
 
 # Start loop
 function moeshnboard:make_checkerboard
+
+# Clean-up
+kill @e[type=armor_stand]
+scoreboard objectives remove createBoard
+fill 143 1 143 128 2 128 minecraft:black_concrete
+fill 136 1 136 136 2 136 minecraft:red_concrete
+
+tellraw @a {"translate":"moeshnboard.complete","color":"light_purple"}
