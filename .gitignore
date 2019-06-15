@@ -1,29 +1,40 @@
 
-logs/
+saves/*/advancements/
 
-crash-reports/
+logs/
 
 realms_persistence\.json
 
-saves/Development/advancements/
+saves/*/data/
 
-saves/Development/data/
+saves/*/region/r\.-1\.-1\.mca
 
-saves/Development/DIM-1/data/
+saves/*/region/r\.-1\.0\.mca
 
-saves/Development/DIM1/data/
+saves/*/region/r\.-1\.1\.mca
 
-saves/Development/playerdata/
+saves/*/region/r\.0\.-1\.mca
 
-saves/Development/stats/
+saves/*/region/r\.0\.1\.mca
 
-saves/Development/session\.lock
+saves/*/region/r\.1\.-1\.mca
 
-saves/Development/level\.dat_old
-options\.txt
-
-saves/Development/icon\.png
+saves/*/region/r\.1\.0\.mca
 
 usercache\.json
 
-saves/Development/advancements/
+saves/*/stats/
+
+saves/*/session\.lock
+
+saves/*/playerdata/
+
+saves/*/level\.dat_old
+
+saves/*/icon\.png
+
+saves/*/DIM-1/
+
+saves/*/DIM1/
+
+*.txt
